@@ -3,16 +3,195 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Rosca Credit</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #07111f;
+      color: white;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 7%;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #4ade80;
+    }
+
+    .connect-btn {
+      background: #4ade80;
+      color: #07111f;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    .badge {
+      color: #4ade80;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 48px;
+      max-width: 750px;
+      margin: auto;
+      line-height: 1.1;
+    }
+
+    h1 span {
+      color: #4ade80;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 25px auto;
+      color: #9ca3af;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .start-btn {
+      background: #4ade80;
+      color: #07111f;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px 7%;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #101d2e;
+      border: 1px solid #1f344d;
+      border-radius: 15px;
+      padding: 25px;
+      width: 280px;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #9ca3af;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 38px;
+      }
+
+      .hero {
+        padding-top: 60px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-  <h1>Rosca Credit</h1>
+  <nav>
+    <div class="logo">Rosca<span>Credit</span></div>
 
-  <p>
-    A decentralized community savings and credit platform
-    built on the Arc blockchain.
-  </p>
+    <button class="connect-btn" onclick="connectWallet()">
+      Connect Wallet
+    </button>
+  </nav>
+
+  <section class="hero">
+
+    <div class="badge">
+      COMMUNITY SAVINGS • BUILT ON ARC
+    </div>
+
+    <h1>
+      Save together.<br>
+      <span>Grow together.</span>
+    </h1>
+
+    <p>
+      Rosca Credit brings community savings and decentralized credit
+      together on the blockchain.
+    </p>
+
+    <button class="start-btn" onclick="startApp()">
+      Start Saving →
+    </button>
+
+  </section>
+
+  <section class="features">
+
+    <div class="card">
+      <h3>👥 Community Savings</h3>
+      <p>
+        Join a trusted group and contribute together with your community.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🔄 Rotating Payouts</h3>
+      <p>
+        Members receive their savings according to a transparent schedule.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>📈 Build Credit</h3>
+      <p>
+        Your contribution history helps you build a decentralized credit profile.
+      </p>
+    </div>
+
+  </section>
+
+  <script>
+
+    function connectWallet() {
+      alert("Wallet connection coming soon");
+    }
+
+    function startApp() {
+      alert("Rosca app coming soon");
+    }
+
+  </script>
 
 </body>
 </html>
